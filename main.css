@@ -44,5 +44,6 @@ main{
 .fw1{
    width: 15rem;
    position: absolute;
-
+   top: 2rem;
+   left: 2rem;
 }
