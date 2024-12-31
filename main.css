@@ -17,7 +17,9 @@
    background: transparent;
 }
 
-
+body{
+   background-color: #000000;
+}
 main{
    width: 100%;
    height: 100vh;
@@ -28,6 +30,7 @@ main{
    );
 
    overflow: hidden;
+    /* display: none; */
 }
 
 .back{
@@ -37,7 +40,7 @@ main{
 .bear{
    width: 10rem;
    position: absolute;
-   bottom: 1rem;
+   bottom: .1rem;
    left: 50%;
    transform: translateX(-50%);
 
@@ -49,6 +52,27 @@ main{
    top: 2rem;
    left: 2rem;
 }
+.pt{
+   position: absolute;
+   color: #FFF;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   font-size: 17px;
+
+   animation: tap 300ms infinite;
+}
+
+@keyframes tap {
+   from{
+      opacity: 0;
+   }to{
+      opacity: 1;
+   }
+}
+
+
+
 
 .fw2{
    width: 12rem;
@@ -63,5 +87,62 @@ main{
    -webkit-tap-highlight-color: transparent;
 }
 
+.hpny{
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background-color: #000000;
+   z-index: 2;
+   display: none;   /* 🎆🎈🎈🎈 */
+
+   color: #FFF;
+}
 
 
+.hor{
+   width: 100%;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+
+   display: none;   /* 🎆🎈🎈🎈 */
+}
+
+.hpnytexts{
+   background: linear-gradient(
+      0deg,
+      #000000,
+      #070707
+   );
+   width: 100%;
+   height: 100%;
+
+   display: none; /*🎆🎆🎈*/
+   align-items: center;
+   justify-content: center;
+
+
+}
+
+.hpnytexts > p {
+   width: 230px;
+   text-align: center;
+   font-size: 2rem;
+}
+
+.fw11{
+   position: absolute;
+   width: 80%;
+   top: 4rem;
+}
+.fw22{
+   position: absolute;
+   width: 70%;
+   bottom: 4rem;
+}
+.fw33{
+   position: absolute;
+   width: 80%;
+   top: 50%;
+   transform: translateY(-50%);
+}
