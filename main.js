@@ -14,7 +14,7 @@ mainsite.style.opacity = val;
 
 
 mainsite.addEventListener('click', ()=>{
-   val -= .1;
+   val -= .3;
    mainsite.style.opacity = val;
 
    if(val <= 0){
