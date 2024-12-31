@@ -27,7 +27,7 @@ main{
       #001C36
    );
 
-
+   overflow: hidden;
 }
 
 .back{
@@ -38,12 +38,30 @@ main{
    width: 10rem;
    position: absolute;
    bottom: 1rem;
-   left: 2rem;
+   left: 50%;
+   transform: translateX(-50%);
+
 }
 
 .fw1{
-   width: 15rem;
+   width: 13rem;
    position: absolute;
    top: 2rem;
    left: 2rem;
 }
+
+.fw2{
+   width: 12rem;
+   position: absolute;
+   top: 6rem;
+   left: 9rem;
+}
+
+.back, .bear, .fw1, .fw2{
+   -webkit-user-drag: none;
+   user-select: none;
+   -webkit-tap-highlight-color: transparent;
+}
+
+
+
